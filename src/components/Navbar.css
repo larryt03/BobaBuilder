@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Poppins:wght@400;600&display=swap");
+
+/* Navbar: Full-Width & Compact */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ede4c6;
+  font-family: "Poppins", sans-serif;
+  z-index: 1000;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* Top Section: Logo & Contact */
+.navbar-top {
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+/* Left Section: Logo & Brand */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px; /* Adjusted size */
+  margin-right: 10px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Baloo 2", sans-serif;
+  color: #7c3c21;
+}
+
+/* Right Section: Contact Button */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-button {
+  background-color: #4a5a3d;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-button:hover {
+  background-color: #3b4a2f;
+}
+
+/* Middle Navigation Bar */
+.navbar-center {
+  width: 100%;
+  background-color: #4a5a3d;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px; /* Adds spacing */
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: #f5f5dc;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Baloo 2", sans-serif;
+  flex: 1;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.navbar-center a:hover {
+  text-decoration: underline;
+}

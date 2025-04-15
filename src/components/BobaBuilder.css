@@ -1,0 +1,161 @@
+.boba-builder-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #f5efd8;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  color: #2f3e2e;
+  height: 100vh; /* Full viewport height to center vertically */
+  box-sizing: border-box;
+}
+
+.drinks-panel,
+.toppings-panel {
+  width: 25%;
+  max-width: 350px;
+}
+
+.boba-display {
+  position: relative;
+  width: 512px;
+  height: 768px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.drink {
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.topping {
+  z-index: 2;
+}
+
+.cup {
+  z-index: 3;
+}
+
+.drink-section {
+  background-color: #445c3c;
+  color: #f5efd8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.drink-btn {
+  background-color: #f5efd8;
+  border: 2px solid #2f3e2e;
+  color: #2f3e2e;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.drink-btn:hover {
+  background-color: #dce3c3;
+}
+
+.drink-btn.selected {
+  background-color: #bfe8d4;
+  border-color: #245744;
+}
+
+.reset-btn {
+  background-color: #2f3e2e;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reset-btn:hover {
+  background-color: #1f2a1b;
+}
+
+/* Display container holds the drink + reset button under it */
+.boba-display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reset button spacing under the drink */
+.boba-display-container .reset-btn {
+  margin-top: 30px;
+}
+
+/* Order summary box under the toppings */
+.order-summary {
+  background-color: #ede4c6;
+  border: 2px dashed #2f3e2e;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  color: #2f3e2e;
+}
+
+.order-summary h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.order-summary p {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+/* Add to Cart button */
+.cart-btn {
+  background-color: #4a5a3d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  font-family: inherit;
+}
+
+.cart-btn:hover {
+  background-color: #3b4a2f;
+}
+
+/* Optional: change height to min-height to allow scrolling if needed */
+.boba-builder-layout {
+  min-height: 100vh;
+}
