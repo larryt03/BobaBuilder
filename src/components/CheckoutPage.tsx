@@ -7,8 +7,8 @@ import PaymentForm from "./PaymentForm";
 const CheckoutPage = () => {
   // Sample order with IDs for proper key handling.
   const [order, setOrder] = useState([
-    { id: 1, name: "Iced Latte", quantity: 2, price: 4.5 },
-    { id: 2, name: "Matcha", quantity: 1, price: 5.0 },
+    { id: 1, name: "Thai Tea", quantity: 1, price: 5.0 },
+    { id: 2, name: "Matcha Latte", quantity: 1, price: 5.0 },
   ]);
   const [tipPercentage, setTipPercentage] = useState(0);
 

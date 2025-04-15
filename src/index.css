@@ -1,7 +1,8 @@
 /* Global Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f3f9f4; /* Light green background */
+  background-color: #f3f9f4;
+  /* Light green background */
   margin: 0;
   padding: 0;
   color: #333;
@@ -21,13 +22,17 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 600px;
-  width: 100%;
-  margin: 20px;
+  width: 90%;
+  /* instead of fixed width */
+  margin: 20px auto;
+  /* centers the container */
 }
 
 /* Headings */
-h1, h2 {
-  color: #2e7d32; /* Dark green for headings */
+h1,
+h2 {
+  color: #2e7d32;
+  /* Dark green for headings */
 }
 
 /* Order Summary */
@@ -41,7 +46,8 @@ h1, h2 {
 }
 
 .order-summary li {
-  background: #e8f5e9; /* Light green background for list items */
+  background: #e8f5e9;
+  /* Light green background for list items */
   border: 1px solid #c8e6c9;
   padding: 10px;
   border-radius: 4px;
