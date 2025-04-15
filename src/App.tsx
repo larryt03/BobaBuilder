@@ -1,18 +1,21 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import BobaBuilder from "./components/BobaBuilder.tsx";
+import BobaBuilder from "./components/BobaBuilder";
+import Menu from "./components/Menu";
+import CheckoutPage from "./components/CheckoutPage"; // ✅ import it
 
-const App: React.FC = () => {
+const App = () => {
   return (
-    <>
-      {/* Fixed Navbar */}
+    <Router>
       <Navbar />
-
-      {/* Main Content: Offset for fixed navbar height */}
       <div style={{ marginTop: "140px" }}>
-        <BobaBuilder />
+        <Routes>
+          <Route path="/" element={<BobaBuilder />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/cart" element={<CheckoutPage />} /> {/* ✅ add route */}
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 };
 

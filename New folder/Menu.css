@@ -1,0 +1,80 @@
+/* Fix Menu Cutting Off & Add Border Radius */
+.menu {
+  background-color: #4a5a3d;
+  padding: 50px;
+  border-radius: 25px; /* Fully rounded edges */
+  box-shadow: none !important; /* Remove shadow completely */
+  color: #f5f5dc;
+  text-align: center;
+  width: 85%;
+  max-width: 900px;
+  margin: 20px auto; /* Add space from top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none; /* No hard edges */
+}
+
+/* Fix Menu Overlapping the Navbar */
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 250px); /* Adjusted to ensure full view */
+  padding-top: 100px; /* More space between navbar & menu */
+  z-index: 1001;
+}
+
+/* Fix: Ensure Menu Title is Fully Visible */
+.menu h2 {
+  font-size: 36px; /* Stand out */
+  font-weight: 700;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 25px; /* Extra space below */
+  text-align: center;
+  padding-top: 20px; /* Prevent cut-off */
+  color: #f5f5dc;
+  text-transform: uppercase;
+}
+
+/* Adjusts spacing between navbar and menu */
+.navbar-center {
+  margin-bottom: 40px !important; /* Forces spacing */
+}
+
+/* Grid layout for categories */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px !important; /* Forces more space between sections */
+  justify-content: center;
+  width: 100%;
+}
+
+/* Category Headers */
+.menu-category h3 {
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 2px solid #f5f5dc;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+/* Category Items */
+.menu-category ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.menu-category ul li {
+  margin-bottom: 6px;
+}
+
+/* Small Note */
+.menu-note {
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.8;
+}

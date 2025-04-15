@@ -1,7 +1,8 @@
 import { useState } from "react";
-import OrderSummary from "../components/OrderSummary";
-import TipSelector from "../components/TipSelector";
-import PaymentForm from "../components/PaymentForm";
+import OrderSummary from "./OrderSummary";
+import TipSelector from "./TipSelector";
+import PaymentForm from "./PaymentForm";
+
 
 const CheckoutPage = () => {
   // Sample order with IDs for proper key handling.

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const RedNoteIcon = "/images/boba_panda.png";
@@ -18,12 +19,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Center Navigation Bar */}
       <div className="navbar-center">
-        <a href="#boba-builder">BOBA BUILDER</a>
-        <a href="#menu">MENU</a>
-        <a href="#cart">CART</a>
-      </div>
+  <Link to="/" className="nav-link">BOBA BUILDER</Link>
+  <Link to="/menu" className="nav-link">MENU</Link>
+  <Link to="/cart" className="nav-link">CART</Link> {/* ✅ links to cart */}
+</div>
+
+
     </nav>
   );
 };
