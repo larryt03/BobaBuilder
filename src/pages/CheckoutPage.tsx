@@ -30,6 +30,7 @@ const CheckoutPage = () => {
     alert("Payment successful!");
   };
 
+  // Return the page format
   return (
     <div className="checkout-page">
       <div className="checkout-container">
