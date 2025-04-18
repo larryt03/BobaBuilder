@@ -1,5 +1,7 @@
 import React from "react";
 
+// this was an attempt to connect the drinks ordered from the boba builder page to the checkout page
+// count the drink as an object and import it to the checkout page.
 const DrinkItem = ({ drink, onRemove }) => {
   console.log("DrinkItem rendering for:", drink);
   return (

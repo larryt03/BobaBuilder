@@ -1,5 +1,6 @@
 import React from "react";
-
+// Returns the order summary format
+// Order summary consists of the order, price, and the removable option
 const OrderSummary = ({ order, onRemoveDrink }) => {
   return (
     <div className="order-summary">

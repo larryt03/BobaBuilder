@@ -20,10 +20,10 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-center">
-  <Link to="/" className="nav-link">BOBA BUILDER</Link>
-  <Link to="/menu" className="nav-link">MENU</Link>
-  <Link to="/cart" className="nav-link">CART</Link> {/* ✅ links to cart */}
-</div>
+        <Link to="/" className="nav-link">BOBA BUILDER</Link>
+        <Link to="/menu" className="nav-link">MENU</Link>
+        <Link to="/cart" className="nav-link">CART</Link> {/* links to cart */}
+      </div>
 
 
     </nav>
