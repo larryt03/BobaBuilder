@@ -9,7 +9,7 @@ We used React + Vite + Typescript for the front end to build this project and us
 
 ### Running Locally
 ```
-git clone **git@github.com:larryt03/BobaBuilder.gi***
+git clone **git@github.com:larryt03/BobaBuilder.git***
 
 cd src
 npm i
