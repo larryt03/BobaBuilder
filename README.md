@@ -21,7 +21,7 @@ Once you have successfully loaded up the app, you can view the menu which has a 
 Adding your base drink on the left side and then adding to the toppings on the right side.
 Throughout all of this you will see the boba builder in the middle all in real time as well as your cart.
 You can go to the cart and then checkout with your tip and payment information.
-```
+
 
 ### Challenges and Features to add in the future
 We had a lot of trouble making the boba builder as creating the functionality of the boba builder was very time consuming, such as layering the drink and toppings with each other.
