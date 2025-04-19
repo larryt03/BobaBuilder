@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+# RedNote Group HCI Project SP25'
+## Larry Tran, Jake Tran, Brandon Tran, Kaylee Nguyen, Tu Pham
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The goal for this project is to create a website for a local boba store. 
+The shop does not have a website that displays their info such as the menu, and anything for online ordering.
+We also wanted to add a custom tool to the website that other boba stores did not have such as the boba builder tool.
 
-Currently, two official plugins are available:
+We used React + Vite + Typescript for the front end to build this project and used javascript for the back end scripts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Running Locally
+```
+git clone **git@github.com:larryt03/BobaBuilder.gi***
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+cd src
+npm i
+npm run dev
+open http://localhost:5173/
+```
+### How to order
+```
+Once you have successfully loaded up the app, you can view the menu which has a wide variety of options, and then you can check out the boba builder drink.
+Adding your base drink on the left side and then adding to the toppings on the right side.
+Throughout all of this you will see the boba builder in the middle all in real time as well as your cart.
+You can go to the cart and then checkout with your tip and payment information.
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Challenges and Features to add in the future
+```
+We had a lot of trouble making the boba builder as creating the functionality of the boba builder was very time consuming, such as layering the drink and toppings with each other.
+The checkout page was hard as well since we had to keep track of the customers data, calculating correct prices, and the payment method.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Features we would like to add in the feature are more realistic drink images, drag and drop, and customer rewards.
 ```
